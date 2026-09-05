@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
+  </head>
     <body>
       <div class="container">
         <div class="search">
           <input type="text" placeholder="Enter city name.." />
           <button><img src="images/search.png"/></button>
         </div>
-        <div id="weather-error" class="error">
-          <p>Loading...</p>
+        <div class="weatherError">
+          <p id="weather-error"></p>
         </div>
             <div class="weather">
-              <img src="images/rain.png" class="weather-icon" />
-              <h1 class="temp">20°C</h1>
-              <h2 class="city">London</h2>
+              <img id="weatherIcon" src="images/rain.png" class="weather-icon" />
+              <h1 id="temp" class="temp"></h1>
+              <h2 id="city" class="city"></h2>
+              <h3 id="condition" class="condition"></h3>
               <div class="details">
                 <div class="col">
                   <img src="images/humidity.png" />
                   <div class="d1">
-                  <p class="humidity">80%</p>
+                  <p id="humidity" class="humidity"></p>
                   <p>Humidity</p>
                   </div>
                 </div>
                 <div class="col">
                   <img src="images/wind.png" />
                   <div class="d2">
-                  <p class="wind">10 km/h</p>
+                  <p id="wind" class="wind"></p>
                   <p>Wind Speed</p>
                   </div>
                 </div>
@@ -40,5 +42,4 @@
       </div>
       <script src="script.js"></script>
     </body>
-  </head>
 </html>
